@@ -133,7 +133,7 @@
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title" style="color: white">
-					Contact Us
+					GET IN TOUCH
 				</span>
 					<div style="color: white; padding-bottom: 5px;">Name:</div>
 				<div class="wrap-input100 validate-input bg1" >
@@ -155,16 +155,16 @@
 				<div style="color: white; padding-bottom: 5px;">Select the service you require </div>
 				<div class="wrap-input100 input100-select bg1">
 					<div>
-						<select class="js-select2" name="service" style="-webkit-appearance: none; -moz-appearance: none; appearance:none;  width: 0 150px; border: none">
-							<option>--select--</option>
-							<option id="show" >CAC Company Registration</option>
-							<option>Debt Recovery</option>
-							<option>Visa Service</option>
+						<select class="js-select2" name="service" style="-webkit-appearance: none; -moz-appearance: none; appearance:none;  width: 0 150px; border: none" onchange="handleOnChange()" id="theSelect">
+							<option value="1">--select--</option>
+							<option id="show" value="2" selected="selected">CAC Company Registration</option>
+							<option value="3">Debt Recovery</option>
+							<option value="4">Visa Service</option>
 						</select>
 						<div class="dropDownSelect2"></div>
 					</div>
 				</div>
-				
+			<div style="display:none" id="reveal">	
 				<div style="color: white; padding-bottom: 5px;">Type of company to be registered </div>
 				<div class="wrap-input100 input100-select bg1">
 					<div>
@@ -190,7 +190,7 @@
 				<div class="wrap-input100 validate-input bg1" >
 					<input class="input100" type="text" name="name" placeholder="Enter the time you want registration to commence">
 				</div>
-		
+			</div>
 				<div style="color: white; padding-bottom: 5px;">Write us a message </div>
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
 					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
@@ -362,6 +362,20 @@
 	
 
 </div>
+
+<script>
+			function handleOnChange(){
+				let e = document.getElementById('theSelect');
+				let strUser = e.options[e.selectedIndex].value;
+				if (strUser == 2){
+					document.getElementById('reveal').style.display = 'block';
+				}else if(strUser == 3 || strUser == 4){
+					document.getElementById('reveal').style.display = 'none';
+				}else if (strUser == 1) {
+					document.getElementById('reveal').style.display = 'none';
+				}			
+			}
+		</script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
