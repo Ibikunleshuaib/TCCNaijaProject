@@ -1295,8 +1295,8 @@ section
 
 .cta
 {
-	padding-top: 125px;
-	padding-bottom: 116px;
+	padding-top: 50px;
+	padding-bottom: 0px;
 	background: linear-gradient(to right, #fa9e1b, #8d4fff);
 }
 .cta_background
