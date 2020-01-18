@@ -30,6 +30,14 @@ $(document).ready(function()
 	var menuActive = false;
 	var header = $('.header');
 	var searchActive = false;
+	$('#button1').click(function() {
+			$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+		});
+
+		$('#button2').click(function() {
+			$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+		});
+        
 
 	setHeader();
 

@@ -80,12 +80,19 @@
 /************
 4. 1199px
 ************/
+@media only screen and (min-width: 1199px)
+{
+	.main_nav_container
+	{
+		margin-right: 31px;
+	}
+}
 
 @media only screen and (max-width: 1199px)
 {
 	.main_nav_container
 	{
-		margin-right: 121px;
+		margin-right: 30px;
 	}
 	.home_slider_content h1:first-child
 	{
