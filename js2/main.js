@@ -1,10 +1,10 @@
 
-(function ($) {
+/*(function ($) {
     "use strict";
 
 
-    /*==================================================================
-    [ Validate after type ]*/
+    ==================================================================
+    [ Validate after type ]
     $('.validate-input .input100').each(function(){
         $(this).on('blur', function(){
             if(validate(this) == false){
@@ -17,8 +17,8 @@
     })
   
   
-    /*==================================================================
-    [ Validate ]*/
+   ==================================================================
+    [ Validate ]
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
@@ -77,3 +77,4 @@
     
 
 })(jQuery);
+*/

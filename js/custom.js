@@ -31,13 +31,20 @@ $(document).ready(function()
 	var header = $('.header');
 	var searchActive = false;
 	$('#button1').click(function() {
-			$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+		$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
 		});
 
-		$('#button2').click(function() {
-			$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+	$('#button2').click(function() {
+		$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
 		});
-        
+    
+    $('.button3').click(function() {
+		$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+		});
+    
+    $('.button4').click(function() {
+		$('html, body').animate({scrollTop: $('#form').offset().top}, 1000);
+		});
 
 	setHeader();
 
